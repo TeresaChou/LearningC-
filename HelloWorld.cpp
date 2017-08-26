@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-   cout << "" << endl;
+   cout << "I love Teresa" << endl;
 
    // 在上面的雙引號中輸入想打的東西
    // 然後按F9
