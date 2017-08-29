@@ -37,6 +37,8 @@
    int a = 10, b = 3;
    cout << (double)a / (double)b;
 
+TODO: 現在你可以試著完成Operator_math.cpp
+
 
 
 
