@@ -7,7 +7,7 @@ int main() {
    string name;
    cout << "Please enter your name:";
    cin >> name;
-   cout << endl << "my name is " << name << endl;
+   cout  << "\n my name is " << name << endl;
 
    return 0;
 
