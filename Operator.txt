@@ -1,0 +1,19 @@
+# Operator 運算子
+
+變數被宣告之後，我們就可以用operator對變數執行不同的運算。每個operator都有不同的方向和priority。我們之前學的 << 就是一個operator，它的方向是從左到右執行，所以當我們把很多 << 串在一起時，會從左邊的印到右邊的。= (Assign)也是一個operator，它的方向則是從右到左。如果我們這樣打：
+
+   int a = 1;
+   int b = 2;
+   int c = 3;
+   a = b = c;
+
+你可以試著把這3個變數印出來，會發現3個的值都是3，因為assign是從右到左執行的，compiler會先編譯 b = c ，然後才是 a = b 。
+
+數學運算符號也是常用的operator，有+-*/ (加減乘除)和 % (mod, 相除取餘數的意思)。它們的方向都是從左到右，並依循先乘除後加減，需要的時候也可以加括號()。這些operator比 = 和 << 的priority都大，所以
+
+   a = 1+2;
+   cout << a;
+
+   cout << 1+2;
+
+都會印出3，因為compiler會先作加號再作assign或output。
