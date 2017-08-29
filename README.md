@@ -7,4 +7,4 @@
 
 2017/8/27
 * Variables and Data Type: Variable.txt
-* homework: Variable.cpp         **due:8/30**
+* homework: Variable.cpp         *due:8/30*
