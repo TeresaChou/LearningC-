@@ -12,4 +12,4 @@
 2017/8/31
 * Operators: Operator.txt
 * homework: Operator_math.cpp Operator_bool.cpp    **due:9/2**
-
+* self-practice: identifier.png
