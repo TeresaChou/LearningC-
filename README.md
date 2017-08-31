@@ -7,9 +7,9 @@
 
 2017/8/27
 * Variables and Data Type: Variable.txt
-* homework: Variable.cpp         *due:8/30*
+* homework: Variable.cpp         **due:8/30**
 
 2017/8/31
 * Operators: Operator.txt
-* homework: Operator_math.cpp Operator_bool.cpp    *due:9/2*
+* homework: Operator_math.cpp Operator_bool.cpp    **due:9/2**
 
