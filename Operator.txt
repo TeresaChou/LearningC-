@@ -52,7 +52,12 @@ TODO: 現在你可以試著完成Operator_math.cpp
    <     less than
    <=    not larger than
 
-這些operator的priority是 not > 數學 > 比較 > and/or。要注意的是，電腦中只會用一個bit來儲存bool值，1代表true，0代表false。例如： 3+5 == 8 的值為1，也就是true。如果其他不等於0的值被指定給bool，就會被當作1來儲存。所以說：
+這些operator的priority是 not > 數學 > 比較 > and/or。要注意的是，在使用比較時一次只能比兩個值，以下是錯誤和正確的示範：
+
+   a < b < c      (X)
+   a < b && b < c (O)
+
+另外，電腦中只會用一個bit來儲存bool值，1代表true，0代表false。例如： 3+5 == 8 的值為1，也就是true。如果其他不等於0的值被指定給bool，就會被當作1來儲存。所以說：
 
    bool Happy_Valentines_Day;
    cout << "Jonathan loves Teresa(T/F?)";
