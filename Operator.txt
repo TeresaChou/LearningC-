@@ -39,6 +39,25 @@
 
 TODO: 現在你可以試著完成Operator_math.cpp
 
+另外一些常見的operator有布林運算子，也就是邏輯運算子，以及比較用的運算子，包括：
 
+   !     not
+   &&    and
+   ||    or
 
+   ==    equal to
+   !=    not equal to
+   >     larger than
+   >=    not less than
+   <     less than
+   <=    not larger than
 
+這些operator的priority是 not > 數學 > 比較 > and/or。要注意的是，電腦中只會用一個bit來儲存bool值，1代表true，0代表false。例如： 3+5 == 8 的值為1，也就是true。如果其他不等於0的值被指定給bool，就會被當作1來儲存。所以說：
+
+   bool Happy_Valentines_Day;
+   cout << "Jonathan loves Teresa(T/F?)";
+   cin >> Happy_Valentines_Day;
+
+使用者不管輸入T還是F，bool存的都會是true。<3
+
+TODO: Operator_bool.cpp
