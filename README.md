@@ -16,4 +16,4 @@
 
 2017/9/4
 * if/Array and Loop: if.txt array_N_loop.txt
-* homework: if.cpp loop1.cpp loop2.cpp wheat.cpp       **due:9/8
+* homework: if.cpp loop1.cpp loop2.cpp wheat.cpp       **due:9/8**
