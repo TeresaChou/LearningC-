@@ -1,0 +1,75 @@
+﻿# Operator 運算子
+
+變數被宣告之後，我們就可以用operator對變數執行不同的運算。每個operator都有不同的方向和priority。
+我們之前學的 << 就是一個operator，它的方向是從左到右執行，所以當我們把很多 << 串在一起時，會從左邊的印到右邊的。
+= (Assign)也是一個operator，它的方向則是從右到左。如果我們這樣打：
+
+   int a = 1;
+   int b = 2;
+   int c = 3;
+   a = b = c;
+
+你可以試著把這3個變數印出來，會發現3個的值都是3，因為assign是從右到左執行的，compiler會先編譯 b = c ，
+然後才是 a = b 。
+
+數學運算符號也是常用的operator，有+-*/ (加減乘除)和 % (mod, 相除取餘數的意思)。它們的方向都是從左到右，
+並依循先乘除後加減，需要的時候也可以加括號()。這些operator比 = 和 << 的priority都大，所以
+
+   a = 1+2;
+   cout << a;
+
+   cout << 1+2;
+
+都會印出3，因為compiler會先作加號再作assign或output。
+
+在使用數學運算符號時要特別注意的是，在C++中整數和小數是不同的型別，如果你在operator前後給入不同的型別，
+compiler會無從得知你的輸出想要的是什麼形式，於是就會自行判斷。(判斷的規則是，只要前後有一個是小數，
+output也就會是小數了。但是把東西丟給compiler去判斷是不太好的習慣，因為這是無法預測的，
+萬一compiler升級了有些東西也是會改的，所以還是要盡量讓程式的表現控制在自己的手上。)
+
+  cout << 10/3;
+
+  int a = 10, b = 3;       // 之前忘了說，用逗號隔開就可以一次宣告多個同型別的變數了！
+  cout << a/b;
+
+這兩個出來的結果都會是3(無條件捨入成整數)。如果想要3.33這樣的答案的話，就要這樣：
+
+   cout << 10.0/3.0;
+
+   double a = 10, b = 3;
+   cout << a/b;
+
+或甚至可以這樣，強迫compiler把整數當小數看：
+
+   int a = 10, b = 3;
+   cout << (double)a / (double)b;
+
+TODO: 現在你可以試著完成Operator_math.cpp
+
+另外一些常見的operator有布林運算子，也就是邏輯運算子，以及比較用的運算子，包括：
+
+   !     not
+   &&    and
+   ||    or
+
+   ==    equal to
+   !=    not equal to
+   >     larger than
+   >=    not less than
+   <     less than
+   <=    not larger than
+
+這些operator的priority是 not > 數學 > 比較 > and/or。要注意的是，在使用比較時一次只能比兩個值，以下是錯誤和正確的示範：
+
+   a < b < c      (X)
+   a < b && b < c (O)
+
+另外，電腦中只會用一個bit來儲存bool值，1代表true，0代表false。例如： 3+5 == 8 的值為1，也就是true。如果其他不等於0的值被指定給bool，就會被當作1來儲存。所以說：
+
+   bool Happy_Valentines_Day;
+   cout << "Jonathan loves Teresa(T/F?)";
+   cin >> Happy_Valentines_Day;
+
+使用者不管輸入T還是F，bool存的都會是true。<3
+
+TODO: Operator_bool.cpp

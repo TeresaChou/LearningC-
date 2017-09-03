@@ -1,0 +1,45 @@
+# if else 判斷式
+
+if就是給予條件，也就是"如果...就..."，而else就是"否則"。用法如下：
+
+   if(條件) {
+
+      條件符合就做這件事;
+   }
+   else {
+
+      不然就做這件事;
+   }
+
+大括號裡面的statement如果只有一句，可以省略大括號。給予的條件應該是一個bool值，所以可以是這樣：
+
+   if(some_string == "yes")
+   if(your_grade >= 60)
+   if(some_bool)
+
+if else也可以連接很多個，或是做成巢狀：
+
+   if(date == "sing")         cout << "Let's go singing!";
+   else if(date == "movie)    cout << "Let's go watch a movie!";
+   else if (date == "hike)    cout << "Let's go hiking!";
+   else                       cout << "What else do you want to do?";
+
+   if(date == "eat) {
+      if(time == "morning")      cout << "we will have some manto.";
+      else if(time == "night")   cout << "we will have some noodle.";
+   }
+   else if(date == "sing") {
+      if(song == "old") cout << "Guard him, Joseph";
+      else              cout << "let's find a new song";
+   }
+
+另外還有一組operator也會有一樣的效果：
+
+   條件? 符合的話做這個: 不符合的話做這個;
+
+   ex:
+   int grade;
+   cin >> grade;
+   bool pass = (grade>=60)? true: false;
+
+TODO: if.cpp
