@@ -9,7 +9,7 @@ int main() {
 
    int age;
    char MP;
-   char Y;
+
    cout << "My priesthood office \n Plesae enter your age: ";
    cin >> age;
    if (age >= 18)
