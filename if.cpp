@@ -10,7 +10,7 @@ int main() {
    int age;
    char MP;
 
-   cout << "My priesthood office \n Plesae enter your age: ";
+   cout << "My priesthood office \nPlesae enter your age: ";
    cin >> age;
    if (age >= 18)
     {
@@ -18,17 +18,17 @@ int main() {
     cin >> MP;
 
     if (MP == 'Y' || MP == 'y')
-    cout << "I'm an elder who holds the Melchizdek Priesthood.\n I have the authority to give the priesthood blessing and perform confirmation." << endl;
+    cout << "I'm an elder who holds the Melchizdek Priesthood.\nI have the authority to give the priesthood blessing and perform confirmation." << endl;
     else if (MP == 'N' || MP == 'n')
-    cout << "I'm a deacon who holds the Aaronic Priesthood.\n I have the authority to pass, prepare, bless the sacrament, and baptize people. " << endl;
+    cout << "I'm a priest who holds the Aaronic Priesthood.\nI have the authority to pass, prepare, bless the sacrament, and baptize people. " << endl;
 
    }
    else if ((age<18) && (age>=16))
-    cout << "I'm a priest who holds the Aaronic Priesthood.\n I have the authority to pass, prepare, bless the sacrament and baptize people." << endl;
+    cout << "I'm a priest who holds the Aaronic Priesthood.\nI have the authority to pass, prepare, bless the sacrament and baptize people." << endl;
    else if ((age<16) && (age>=14))
-    cout << "I'm a teacher who holds the Aaronic Priesthood.\n I have the authority to pass and prepare the sacrament. " << endl;
+    cout << "I'm a teacher who holds the Aaronic Priesthood.\nI have the authority to pass and prepare the sacrament. " << endl;
    else if ((age<14) && (age>=12))
-    cout << "I'm a deacon who holds the Aaronic Priesthood.\n I have the authority to pass the sacrament. " << endl;
+    cout << "I'm a deacon who holds the Aaronic Priesthood.\nI have the authority to pass the sacrament. " << endl;
    else if (age<12)
     cout << "You should be prepared to receive the Aronic Preisthood!" << endl;
    else
