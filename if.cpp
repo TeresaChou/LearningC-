@@ -9,14 +9,11 @@ int main() {
 
    int age;
    char MP;
-
-   cout << "My priesthood office \n Plesae enter your age: ";
-   cin >> age;
-   if (age >= 18)
-    {
+   
+   if (age>=18)
+   {
     cout << "Melchizedek Priesthood given(Y/N): ";
     cin >> MP;
-
     if (MP == 'Y' || MP == 'y')
     cout << "I'm an elder who holds the Melchizdek Priesthood.\n I have the authority to give the priesthood blessing and perform confirmation." << endl;
     else if (MP == 'N' || MP == 'n')
@@ -36,7 +33,6 @@ int main() {
         cout << "Error: invalid input!" << endl;
      }
 
-
-
+      
    return 0;
 }

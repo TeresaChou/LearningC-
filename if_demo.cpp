@@ -8,7 +8,7 @@ int main() {
    // the program will show the correspond priesthood office name and duties.
 
    int age;
-   char MP;
+   char MP = 'N';
 
    cout << "My priesthood office\nPlesae enter your age: ";
    cin >> age;
