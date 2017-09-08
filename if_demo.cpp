@@ -8,16 +8,41 @@ int main() {
    // the program will show the correspond priesthood office name and duties.
 
    int age;
-   char MP;
-   cout << "My priesthood office: ";
-   cin >> age;
-   if(age >= 18) {
-      cout << "Melchizedek Priesthood given(1/0): " << endl;
-      cin >> MP;
-      if(MP == 'Y' || MP == 'y') cout << "";
-      else if(MP == 'N' || MP == 'n')  cout << "";
-      else cout << "Invalid input!";
-   }
+   char MP = 'N';
 
+   cout << "My priesthood office\nPlesae enter your age: ";
+   cin >> age;
+
+   if(age < 12)      // not yet received priesthood
+      cout << "You should be prepared to receive the Aronic Preisthood!" << endl;
+   else {
+
+      if (age >= 18) {
+         cout << "Melchizedek Priesthood given(Y/N): ";
+         cin >> MP;
+      }
+
+      // position
+      cout << "I'm ";
+      if(age >= 16) {
+         if (MP == 'Y' || MP == 'y')   cout << "an elder ";
+         else if (MP == 'N' || MP == 'n') cout << "a priest ";
+      }
+      else if(age>=14)  cout << "a teacher ";
+      else  cout << "a deacon ";
+
+      // priesthood
+      cout << "who holds the ";
+      if (MP == 'Y' || MP == 'y')   cout << "Melchizedek Priesthood." << endl;
+      else if (MP == 'N' || MP == 'n') cout << "Aaronic Priesthood." << endl;
+
+      // duties
+      cout << "I have the authority to pass the sacrament";
+      if(age > 14)   cout << ", prepare the sacrament";
+      if(age > 16)   cout << ", bless the sacrament, baptize people";
+      if(MP == 'Y' || MP == 'y') cout << ", give priesthood blessings and confirmations";
+
+      cout << '.' << endl;   
+   }
    return 0;
 }
