@@ -17,5 +17,20 @@ int main()
        cout << endl;
 
    }
+
+   // You did a great job! but there is some redundancy
+   // You can do it like this:
+   
+   int c;
+   for(int a=1; a<10; a++)    // 直接宣告在裏面 
+   {
+      for(int b=1; b<10; b++)
+      {
+         c = a*b;             // 這邊不用再宣告一次
+         cout << a << "X" << b << "=" << c << '\t';
+      }
+      cout << endl;
+   }
+
    return 0;
 }
