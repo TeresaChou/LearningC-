@@ -20,7 +20,7 @@ int main() {
 
    }
    cout << "1+2+3+...+" << n << "=" << s1 << endl;
-   cout << "1X2X3+...X" << n << "=" << s2 << endl;
+   cout << "1*2*3+...*" << n << "=" << s2 << endl;
 
 
    return 0;
