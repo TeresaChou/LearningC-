@@ -18,7 +18,7 @@ int main() {
     cin >> MP;
 
     if (MP == 'Y' || MP == 'y')
-    cout << "I'm an elder who holds the Melchizdek Priesthood.\nI have the authority to give the priesthood blessing and perform confirmation." << endl;
+    cout << "I'm an elder who holds the Melchizedek Priesthood.\nI have the authority to give the priesthood blessing and perform confirmation." << endl;
     else if (MP == 'N' || MP == 'n')
     cout << "I'm a priest who holds the Aaronic Priesthood.\nI have the authority to pass, prepare, bless the sacrament, and baptize people. " << endl;
 
