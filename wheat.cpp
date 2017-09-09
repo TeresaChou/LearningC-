@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main() {
@@ -13,6 +14,21 @@ int main() {
    // 2 wheat on block 2
    // 4 wheat on block 3
    // Total wheat: 7
+
+   int a=1,n;
+   double s;
+
+   cout << "Please enter an integer as the number of the chess board:";
+   cin >> n;
+
+   while (a<=n)
+   {
+    s=pow(2,a-1);
+    cout << s << " wheat on block " << a << endl;
+    a++;
+   }
+
+
 
    return 0;
 }
