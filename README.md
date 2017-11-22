@@ -21,3 +21,6 @@
 2017/9/25
 * formatted output and different data types: formatted_output.txt
 * homework: month.cpp sizeof.cpp formatted_output_precision.cpp      **due:10/9**
+
+2017/11/22
+* homework: OOXX.cpp    **due:12/2**
