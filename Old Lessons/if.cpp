@@ -16,7 +16,7 @@ int main() {
    if (age >= 18)
     {
 =======
-   
+
    if (age>=18)
    {
 >>>>>>> b00c58b145a91417fa38833054398227d09248b6
@@ -41,6 +41,6 @@ int main() {
         cout << "Error: invalid input!" << endl;
      }
 
-      
+
    return 0;
 }
