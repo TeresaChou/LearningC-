@@ -9,16 +9,16 @@ print(not T, "= False")
 
 # Now try it yourself!
 
-print(F or T, "= ")
+print(F or T, "= True ")
 
-print((not F) and (not not T), "= ")
+print((not F) and (not not T), "= true ")
 
-print((100-100 == 0), "= ")
+print((100-100 == 0), "= true ")
 
-print((15+15 != 30), "= ")
+print((15+15 != 30), "= false ")
 
-print((10 <= 45-35), "= ")
+print((10 <= 45-35), "= true ")
 
-print((33 > 98), "= ")
+print((33 > 98), "= false ")
 
-print((45 >= 10) or (14 < 8), "= ")
+print((45 >= 10) or (14 < 8), "= true ")
