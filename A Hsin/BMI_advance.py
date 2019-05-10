@@ -15,4 +15,36 @@ print("Thank you. ")
 weight = input("And then what is your weight?(unit:kg) ")
 print("Good job. Now press ENTER and you'll see your BMI.")
 input()
-print(name,"your BMI is",( float(weight) / (float(height)*float(height))))
+BMI=(float(weight) / (float(height)*float(height)))
+print(name,"your BMI is",float(BMI) )
+
+if BMI < 18.5 :
+    print("(underweight)")
+elif BMI>=18.5 and BMI<24 :
+    print("(ideal weight)")
+else :
+    print("(overweight)")
+
+answer = input("Do you want to try again?")
+while answer == 'yes' :
+    print=("Let's go!")
+
+    name = input("What is your name? ")
+    print("Hi",name,":)")
+    age = input("What is your age? ")
+    print("Great! Now I'm going to help you to know your BMI.")
+    input()
+    height = input("Well, tell me your height.(unit:m)")
+    print("Thank you. ")
+    weight = input("And then what is your weight?(unit:kg) ")
+    print("Good job. Now press ENTER and you'll see your BMI.")
+    input()
+    BMI=(float(weight) / (float(height)*float(height)))
+    print(name,"your BMI is",float(BMI) )
+
+    if BMI < 18.5 :
+        print("(underweight)")
+    elif BMI>=18.5 and BMI<24 :
+        print("(ideal weight)")
+    else :
+        print("(overweight)")

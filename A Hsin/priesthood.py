@@ -3,27 +3,43 @@
 
 MP = 'N'
 
-print("My priesthood officei")
-age = input("Plesae enter your age: ")
+print("My priesthood office")
+age = input("Plese enter your age: ")
+age=int(age)
 
-if:   # TODO: complete this line
+if age<12 :  # TODO: complete this line
    # too young for priesthood
    print("You should be prepared to receive the Aronic Preisthood soon in the future!")
 else :
 
    # check if he has recieved MP or not
-   if:   # TODO: complete this line
+   if age>=18:   # TODO: complete this line
       MP = input("Melchizedek Priesthood given(Y/N): ")
+   
+   if MP=='Y':
+      HP = input("Was ordained to High Priest(Y/N):")
+   
+
 
    # position
-   position = ""
+   if age>=12 and age<14 :
+      position = "a deacon"
+   if age>=14 and age<16 :
+      position = "a teacher"
+   if age >=16:
+      position = "a priest"
+   if MP=='Y'and HP == 'Y':
+      position = "a High Priest"
    # add your code here to change variable position to appropriate position name
    # ex: a deacon
 
    print("I'm ", position)
 
-   priesthood = ""
-   # add your code here to change variavle priesthood to either Aronic/Melchizedek
+   if age>=12 and MP !='Y':
+      priesthood = "Aaronic"
+   if age>=18 and MP == 'Y':
+      priesthood = "Melchizedek"
+   # add your code here to change variavle priesthood to either Aaronic/Melchizedek
 
    print("I hold the", priesthood, "Priesthood.")
 
@@ -34,6 +50,6 @@ else :
    if age > 16:   
       duty += ", bless the sacrament, baptize people"
    if MP == 'Y' or MP == 'y':
-      duty += ", give priesthood blessings and confirmations";
+      duty += ", give priesthood blessings and confirmations"  ;
+   
    print("I have the authority to", duty)
-}
